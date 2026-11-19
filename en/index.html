@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Javier Doblas Martín","jobTitle":"CIO · Chief Information Officer","url":"https://www.nojau.es/en/","email":"mailto:jdoblas@nojau.es","address":{"@type":"PostalAddress","addressLocality":"Zaragoza","addressCountry":"ES"},"sameAs":["https://www.linkedin.com/in/javierdoblas/"],"knowsAbout":["IT leadership","JD Edwards ERP","Applied Artificial Intelligence","Systems integration","IT governance"]}
+{"@context":"https://schema.org","@type":"Person","name":"Javier Doblas Martín","jobTitle":"CIO · Chief Information Officer","url":"https://www.nojau.es/en/","email":"mailto:jdoblas@nojau.es","address":{"@type":"PostalAddress","addressLocality":"Zaragoza","addressCountry":"ES"},"sameAs":["https://www.linkedin.com/in/javierdoblas/","https://jdoblasblog.wordpress.com/"],"knowsAbout":["IT leadership","JD Edwards ERP","Applied Artificial Intelligence","Systems integration","IT governance"]}
 </script>
 <style>
 :root{
@@ -94,6 +94,13 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,42px);lin
 .edu div{font-size:15px;color:var(--ink-2)}
 .edu b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 /* Colaboraciones */
+.posts{margin-left:296px;border-top:1px solid var(--line)}
+.post{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.post time{font-size:14px;color:var(--muted);padding-top:3px}
+.post h3{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.25;letter-spacing:-.01em}
+.post p{font-size:15px;color:var(--ink-2);margin-top:6px}
+.post:hover h3{color:var(--accent)}
+.more{margin-left:296px;margin-top:26px;display:inline-block;font-weight:600;font-size:15px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
 .collab{background:var(--ink);color:var(--paper);border-bottom:0}
 .collab .num{color:#9aa3ae}
 .collab .sec-head p{color:#c9cfd6}
@@ -115,7 +122,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .fig:nth-child(2){border-right:0}
   .fig:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .sec-head{grid-template-columns:1fr;gap:10px}
-  .areas,.timeline,.edu,.collab-list,.contact{margin-left:0}
+  .areas,.timeline,.edu,.collab-list,.contact,.posts,.more{margin-left:0}
+  .post{grid-template-columns:1fr;gap:4px}
   .areas,.collab-list{grid-template-columns:1fr 1fr}
   .cases{grid-template-columns:1fr}
   nav > a{display:none}
@@ -140,6 +148,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <a href="#hitos">Milestones</a>
       <a href="#experiencia">Expertise</a>
       <a href="#trayectoria">Career</a>
+      <a href="#blog">Blog</a>
       <a href="#colaboraciones">Contact</a>
       <span class="lang"><a href="/" hreflang="es" lang="es">ES</a> <b>EN</b></span>
     </nav>
@@ -263,10 +272,28 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     </div>
   </section>
 
+  <section class="block" id="blog">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">05 · Blog</div>
+        <div>
+          <h2>Notes from a CIO.</h2>
+          <p>I write about what I learn leading IT: doubts, mistakes and decisions. Articles are in Spanish.</p>
+        </div>
+      </div>
+      <div class="posts">
+        <a class="post" href="https://jdoblasblog.wordpress.com/2026/11/17/el-huevo-o-la-gallina-la-ia-y-los-procesos-de-la-empresa/" rel="noopener"><time datetime="2026-11-17">17 Nov 2026</time><div><h3>¿El huevo o la gallina? La IA y los procesos de la empresa</h3><p>Redesign processes for AI, or apply it where it helps? Why the order matters.</p></div></a>
+        <a class="post" href="https://jdoblasblog.wordpress.com/2026/11/14/caerse-no-siempre-es-un-ataque-pero-el-impacto-es-el-mismo/" rel="noopener"><time datetime="2026-11-14">14 Nov 2026</time><div><h3>Caerse no siempre es un ataque, pero el impacto es el mismo</h3><p>When a critical provider goes down, the CIO's question is not who is to blame but how much we depend on it.</p></div></a>
+        <a class="post" href="https://jdoblasblog.wordpress.com/2025/09/01/mas-alla-de-los-hierros-como-presentar-y-defender-un-presupuesto-de-ti-ante-el-comite-de-direccion/" rel="noopener"><time datetime="2025-09-01">1 Sep 2025</time><div><h3>Más allá de los hierros: cómo presentar y defender un presupuesto de TI ante el Comité de Dirección</h3><p>Turning the annual IT budget defence into a conversation about business value.</p></div></a>
+      </div>
+      <a class="more" href="https://jdoblasblog.wordpress.com/" rel="noopener">All articles (in Spanish) →</a>
+    </div>
+  </section>
+
   <section class="block collab" id="colaboraciones">
     <div class="wrap">
       <div class="sec-head">
-        <div class="num">05 · Engagements</div>
+        <div class="num">06 · Engagements</div>
         <div>
           <h2>Open to selected engagements.</h2>
           <p>For companies that need senior IT leadership judgement at a specific moment, without hiring a full-time CIO.</p>
