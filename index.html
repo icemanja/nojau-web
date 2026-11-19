@@ -7,6 +7,9 @@
 <meta name="description" content="Javier Doblas Martín, CIO con más de 25 años dirigiendo departamentos TIC en compañías industriales con proyección internacional. ERP JD Edwards, integración de sistemas e Inteligencia Artificial aplicada al negocio. Zaragoza.">
 <meta name="author" content="Javier Doblas Martín">
 <link rel="canonical" href="https://www.nojau.es/">
+<link rel="alternate" hreflang="es" href="https://www.nojau.es/">
+<link rel="alternate" hreflang="en" href="https://www.nojau.es/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.nojau.es/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Javier Doblas Martín · CIO">
 <meta property="og:description" content="Dirección TIC, ERP e IA aplicada para compañías industriales con proyección internacional.">
@@ -38,6 +41,9 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;h
 .brand span{color:var(--accent)}
 nav a{font-size:14.5px;text-decoration:none;color:var(--ink-2);margin-left:26px}
 nav a:hover{color:var(--accent)}
+.lang{margin-left:26px;font-size:13px;letter-spacing:.08em;font-weight:600}
+.lang a{margin-left:0;padding:3px 7px;border:1px solid var(--line);border-radius:2px}
+.lang b{padding:3px 7px;color:var(--accent)}
 /* Hero */
 .hero{padding:92px 0 72px;border-bottom:1px solid var(--line)}
 .hero .wrap{display:grid;grid-template-columns:1fr 240px;gap:56px;align-items:center}
@@ -112,7 +118,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .areas,.timeline,.edu,.collab-list,.contact{margin-left:0}
   .areas,.collab-list{grid-template-columns:1fr 1fr}
   .cases{grid-template-columns:1fr}
-  nav a:not(:last-child){display:none}
+  nav > a{display:none}
 }
 @media (max-width:560px){
   body{font-size:16px}
@@ -135,6 +141,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <a href="#experiencia">Experiencia</a>
       <a href="#trayectoria">Trayectoria</a>
       <a href="#colaboraciones">Contacto</a>
+      <span class="lang"><b>ES</b> <a href="/en/" hreflang="en" lang="en">EN</a></span>
     </nav>
   </div>
 </header>
