@@ -85,7 +85,7 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,42px);lin
 .collab{background:var(--ink);color:var(--paper);border-bottom:0}
 .collab .num{color:#9aa3ae}
 .collab .sec-head p{color:#c9cfd6}
-.collab-list{margin-left:296px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2c3846;border:1px solid #2c3846}
+.collab-list{margin-left:296px;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#2c3846;border:1px solid #2c3846}
 .collab-list div{background:var(--ink);padding:28px 26px}
 .collab-list h3{font-family:var(--serif);font-weight:400;font-size:22px;margin-bottom:10px}
 .collab-list p{font-size:15px;color:#c9cfd6}
