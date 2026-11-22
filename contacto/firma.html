@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firma de correo · Javier Doblas</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<style>
+body{margin:0;background:#f4f0e8;color:#16212e;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55}
+main{max-width:720px;margin:0 auto;padding:48px 24px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:30px;margin:0 0 12px}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#a3491f;margin:40px 0 12px}
+p,li{color:#3c4756}
+.box{background:#fff;border:1px solid #d6cdbd;padding:28px}
+pre{background:#fff;border:1px solid #d6cdbd;padding:20px;white-space:pre-wrap;font-size:14px;margin:0}
+button{font:inherit;font-weight:600;font-size:15px;background:#16212e;color:#f4f0e8;border:0;padding:12px 20px;border-radius:2px;cursor:pointer;margin-top:14px}
+button:hover{background:#a3491f}
+.ok{margin-left:12px;color:#5a6270;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>Firma de correo</h1>
+<p>Para jdoblas@nojau.es. Sin teléfono.</p>
+
+<h2>Firma con logotipo (webmail de IONOS, Outlook, Thunderbird)</h2>
+<div class="box" id="firma">
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;font-family:Georgia,'Times New Roman',serif;color:#16212e">
+<tr>
+<td style="vertical-align:middle;padding:0 14px 0 0;border-right:1px solid #d6cdbd"><a href="https://www.nojau.es/" style="text-decoration:none"><img src="https://www.nojau.es/contacto/firma-j.png" width="35" height="40" alt="J." style="display:block;border:0"></a></td>
+<td style="vertical-align:middle;padding:0 0 0 14px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:1.2;color:#16212e">Javier Doblas</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#5a6270;padding-top:3px">CIO · Dirección TIC, ERP e IA aplicada</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;padding-top:6px"><a href="mailto:jdoblas@nojau.es" style="color:#a3491f;text-decoration:none">jdoblas@nojau.es</a> <span style="color:#d6cdbd">·</span> <a href="https://www.nojau.es/" style="color:#a3491f;text-decoration:none">nojau.es</a> <span style="color:#d6cdbd">·</span> <a href="https://www.linkedin.com/in/javierdoblas/" style="color:#a3491f;text-decoration:none">LinkedIn</a></div>
+</td>
+</tr>
+</table>
+</div>
+<button type="button" data-copy="firma">Copiar firma</button><span class="ok" id="ok-firma" aria-live="polite"></span>
+
+<h2>Firma en texto (apps del móvil)</h2>
+<pre id="texto">--
+Javier Doblas
+CIO · Dirección TIC, ERP e IA aplicada
+jdoblas@nojau.es · www.nojau.es
+linkedin.com/in/javierdoblas</pre>
+<button type="button" data-copy="texto">Copiar texto</button><span class="ok" id="ok-texto" aria-live="polite"></span>
+
+<h2>Cómo instalarla</h2>
+<ol>
+<li><b>Webmail de IONOS:</b> Configuración → Correo → Firma. Pulsa «Copiar firma» aquí y pega en el editor. Activa la firma para mensajes nuevos y respuestas.</li>
+<li><b>Outlook:</b> Archivo → Opciones → Correo → Firmas → Nueva, y pega.</li>
+<li><b>App Gmail en Android:</b> Ajustes → la cuenta jdoblas@nojau.es → Firma para móvil. Solo admite texto: usa «Copiar texto».</li>
+</ol>
+</main>
+<script>
+document.querySelectorAll('button[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var id=b.getAttribute('data-copy'),el=document.getElementById(id),ok=document.getElementById('ok-'+id);
+    try{
+      var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+      var done=document.execCommand('copy');s.removeAllRanges();
+      ok.textContent=done?'Copiada':'Selecciónala y cópiala a mano';
+    }catch(e){ok.textContent='Selecciónala y cópiala a mano';}
+  });
+});
+</script>
+</body>
+</html>

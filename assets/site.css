@@ -91,6 +91,14 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,42px);lin
 .collab-list div{background:var(--ink);padding:28px 26px}
 .collab-list h3{font-family:var(--serif);font-weight:400;font-size:22px;margin-bottom:10px}
 .collab-list p{font-size:15px;color:#c9cfd6}
+.steps{margin-left:296px;margin-top:56px;list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.steps-title{margin-left:296px;margin-top:64px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#9aa3ae;font-weight:600}
+.steps-title + .steps{margin-top:18px}
+.steps li{border-top:1px solid #56626f;padding-top:16px}
+.steps b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;color:#e39a78;line-height:1;margin-bottom:12px}
+.steps h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.steps p{font-size:15px;color:#c9cfd6}
+.contact a.vcf{font-family:var(--sans);font-size:15px;font-weight:600}
 .contact{margin-left:296px;margin-top:52px;display:flex;gap:44px;flex-wrap:wrap;align-items:baseline}
 .contact .label{display:block;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#9aa3ae;margin-bottom:6px}
 .contact a{font-family:var(--serif);font-size:24px;text-decoration:none;border-bottom:1px solid #56626f}
@@ -105,7 +113,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .fig:nth-child(2){border-right:0}
   .fig:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .sec-head{grid-template-columns:1fr;gap:10px}
-  .areas,.timeline,.edu,.collab-list,.contact,.posts,.more{margin-left:0}
+  .areas,.timeline,.edu,.collab-list,.contact,.posts,.more,.steps,.steps-title{margin-left:0}
+  .steps{grid-template-columns:1fr 1fr}
   .post{grid-template-columns:1fr;gap:4px}
   .areas,.collab-list{grid-template-columns:1fr 1fr}
   .cases{grid-template-columns:1fr}
@@ -116,7 +125,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .wrap{padding:0 20px}
   .hero{padding:56px 0 48px}
   section.block{padding:60px 0}
-  .areas,.collab-list,.edu{grid-template-columns:1fr}
+  .areas,.collab-list,.edu,.steps{grid-template-columns:1fr}
   .row{grid-template-columns:1fr;gap:4px}
   .fig{padding:24px 18px}.fig b{font-size:36px}
 }
