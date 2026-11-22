@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # historial completo para fechar el sitemap
 
       - name: Preparar el sitio
         run: |
@@ -32,6 +34,9 @@ jobs:
 
       - name: Traer los últimos artículos del blog
         run: python3 tools/update_blog.py _site
+
+      - name: Actualizar fechas del sitemap
+        run: python3 tools/update_sitemap.py _site
 
       - uses: actions/upload-pages-artifact@v5
         with:
