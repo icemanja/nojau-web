@@ -18,8 +18,10 @@ a{color:inherit}
 /* Cabecera */
 header.top{position:sticky;top:0;z-index:10;background:rgba(244,240,232,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{font-family:var(--serif);font-weight:600;font-size:19px;text-decoration:none;letter-spacing:-.01em}
-.brand span{color:var(--accent)}
+.brand{display:inline-flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:500;font-size:19px;text-decoration:none;letter-spacing:-.01em;color:var(--ink)}
+.brand-mark{height:30px;width:auto;display:block}
+.brand-dot{fill:var(--accent)}
+.brand-name{border-left:1px solid var(--line);padding-left:12px;line-height:28px}
 nav a{font-size:14.5px;text-decoration:none;color:var(--ink-2);margin-left:26px}
 nav a:hover{color:var(--accent)}
 .lang{margin-left:26px;font-size:13px;letter-spacing:.08em;font-weight:600}
