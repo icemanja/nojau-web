@@ -98,6 +98,17 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,42px);lin
 .steps b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;color:#e39a78;line-height:1;margin-bottom:12px}
 .steps h3{font-size:16px;font-weight:600;margin-bottom:8px}
 .steps p{font-size:15px;color:#c9cfd6}
+.steps p a{text-decoration:none;border-bottom:1px solid #56626f}
+.steps p a:hover{color:#e39a78;border-color:#e39a78}
+/* Cinco ejes */
+.ejes{margin-left:296px;margin-top:18px;list-style:none;padding:0;border-bottom:1px solid #56626f}
+.ejes li{display:grid;grid-template-columns:48px 230px 1fr;gap:24px;padding:20px 0;border-top:1px solid #56626f;align-items:baseline}
+.ejes b{font-family:var(--serif);font-weight:400;font-size:24px;color:#e39a78;line-height:1}
+.ejes h4{font-size:16px;font-weight:600;line-height:1.4}
+.ejes p{font-size:15px;color:#c9cfd6}
+.ejes p span{display:block;color:#9aa3ae;margin-top:4px}
+.ejes li.ia{border-top-color:#e39a78}
+.ejes li.ia b{font-size:20px;letter-spacing:.04em}
 .contact a.vcf{font-family:var(--sans);font-size:15px;font-weight:600}
 .contact{margin-left:296px;margin-top:52px;display:flex;gap:44px;flex-wrap:wrap;align-items:baseline}
 .contact .label{display:block;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#9aa3ae;margin-bottom:6px}
@@ -113,7 +124,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .fig:nth-child(2){border-right:0}
   .fig:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .sec-head{grid-template-columns:1fr;gap:10px}
-  .areas,.timeline,.edu,.collab-list,.contact,.posts,.more,.steps,.steps-title{margin-left:0}
+  .areas,.timeline,.edu,.collab-list,.contact,.posts,.more,.steps,.steps-title,.ejes{margin-left:0}
+  .ejes li{grid-template-columns:48px 1fr;gap:6px 18px}
+  .ejes p{grid-column:2}
   .steps{grid-template-columns:1fr 1fr}
   .post{grid-template-columns:1fr;gap:4px}
   .areas,.collab-list{grid-template-columns:1fr 1fr}
